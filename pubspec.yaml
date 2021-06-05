@@ -1,0 +1,23 @@
+name: agora_test
+description: Testing out the new targets (macos, web) for Agora.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.13.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  agora_rtc_engine:
+    git:
+      url: https://github.com/AgoraIO/Agora-Flutter-SDK.git
+      ref: dev/flutter2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
